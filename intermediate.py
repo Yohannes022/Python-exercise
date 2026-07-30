@@ -26,3 +26,19 @@
 
 # merged = merge_dicts(d1, d2)
 # print(f'Merged dictionary: {merged}')
+
+
+
+# ==========================================================================
+
+
+
+# Exercise 3: Frequency Map with Counter
+# from collections import Counter
+# def char_frequency(text):
+# 	letters = text.lower().replace(" ", "")
+
+# 	return Counter(letters)
+
+# text = "Python Programming"
+# print(f"Character Frequency: {char_frequency(text)}")
