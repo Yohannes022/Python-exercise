@@ -68,3 +68,35 @@
 
 # text = "Python Programming"
 # print(f"Character Frequency: {char_frequency(text)}")
+
+
+
+# ==========================================================================
+
+
+
+# Exercise 4: Anagram Checker
+
+# Practice Problem: Write a function that determines if two strings are 
+# anagrams (contain the exact same characters in a different order).
+
+# Exercise Purpose: This problem introduces the concept of algorithmic 
+# sorting as a comparison tool. It demonstrates that transforming data into a 
+# “canonical” or “standard” form (sorted) makes comparison trivial.
+
+# def anagram_check(word_1, word_2):
+# 	sorted_1 = sorted(word_1.lower().replace(" ", ""))
+# 	sorted_2 = sorted(word_2.lower().replace(" ", ""))
+# 	print(sorted_1)
+# 	print(sorted_2)
+# 	return sorted_1 == sorted_2
+
+# anagram_check("listen", "silent")
+
+
+
+# ==========================================================================
+
+
+
+#
