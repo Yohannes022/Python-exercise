@@ -112,14 +112,38 @@
 
 # Expected Output: Flattened: [1, 2, 3, 4, 5, 6, 7]
 
-def flatten_a_list(numbers):
-	flattened = []
+# def flatten_a_list(numbers):
+# 	flattened = []
 
-	for num in numbers:
-		if isinstance(num, list):
-			flattened.extend(flatten_a_list(num))
-		else: flattened.append(num)
-	return flattened
+# 	for num in numbers:
+# 		if isinstance(num, list):
+# 			flattened.extend(flatten_a_list(num))
+# 		else: flattened.append(num)
+# 	return flattened
 
-nested = [1, [2, 3], [4, [5, 6]], 7]
-print(flatten_a_list(nested))
+# nested = [1, [2, 3], [4, [5, 6]], 7]
+# print(flatten_a_list(nested))
+
+
+
+# ==========================================================================
+
+
+
+# Exercise 6: Reverse Each Word of a String
+
+# Practice Problem: Given a sentence, reverse each individual word within the string while 
+# maintaining the original word order.
+
+# Exercise Purpose: This exercise teaches you the difference between reversing a sequence 
+# (the whole string) and iterating through sub-sequences (words). It emphasizes the use of the 
+# .split() and .join() methods, which are essential for text processing.
+
+# Given Input: "Python is awesome"
+
+# Expected Output: "nohtyP si emosewa"
+
+def reverse_string(sentence):
+	words =  sentence.split()
+	reversed = [word[::-1] for word in words]
+	return " ".join(reversed)
