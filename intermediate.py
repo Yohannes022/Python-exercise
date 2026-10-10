@@ -99,4 +99,27 @@
 
 
 
-#
+#Exercise 5: Flatten a Nested List
+
+# Practice Problem: Write a recursive function that takes a list containing other lists 
+# (of any depth) and returns a single “flat” list of all elements.
+
+# Exercise Purpose: Intermediate Python often involves dealing with nested data (like JSON). 
+# This exercise teaches Recursion—the ability of a function to call itself—to drill down into 
+# nested structures until it finds base values.
+
+# Given Input: nested = [1, [2, 3], [4, [5, 6]], 7]
+
+# Expected Output: Flattened: [1, 2, 3, 4, 5, 6, 7]
+
+def flatten_a_list(numbers):
+	flattened = []
+
+	for num in numbers:
+		if isinstance(num, list):
+			flattened.extend(flatten_a_list(num))
+		else: flattened.append(num)
+	return flattened
+
+nested = [1, [2, 3], [4, [5, 6]], 7]
+print(flatten_a_list(nested))
